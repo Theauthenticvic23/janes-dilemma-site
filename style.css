@@ -183,7 +183,6 @@ body {
   background-color: #0a2540;
   color: #ffffff;
 }
-
 /* --- PROJECT BOOK IMAGE SIZE FIX --- */
 .project-card img {
   max-width: 200px;   /* reduced width */
