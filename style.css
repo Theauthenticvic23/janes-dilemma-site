@@ -184,23 +184,6 @@ body {
   color: #ffffff;
 }
 
-/* Project Cards / Services / Testimonials */
-.projects {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.project-card {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid #f5c518;
-  flex: 1;
-  min-width: 250px;
-  transition: transform 0.3s ease;
-}
-
 /* --- PROJECT BOOK IMAGE SIZE FIX --- */
 .project-card img {
   max-width: 200px;   /* reduced width */
@@ -277,6 +260,28 @@ body {
   }
 }
 /* --- END MOBILE FIX --- */
+
+/* Project Cards / Services / Testimonials */
+.projects {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #f5c518;
+  flex: 1;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
 .project-card h3 {
   color: #0a2540;
   margin-bottom: 0.5rem;
