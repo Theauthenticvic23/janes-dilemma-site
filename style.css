@@ -201,10 +201,82 @@ body {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+/* --- PROJECT BOOK IMAGE SIZE FIX --- */
+.project-card img {
+  max-width: 200px;   /* reduced width */
+  max-height: 280px;  /* keeps proportion small + professional */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto; /* centers image inside card */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project-card img:hover {
+  transform: scale(1.05); /* subtle hover zoom */
+  box-shadow: 0 6px 16px rgba(10, 37, 64, 0.25);
+}
+/* --- END PROJECT BOOK IMAGE FIX --- */
+
+
+/* --- HOVER EFFECTS FOR CARDS & BUTTONS --- */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(10, 37, 64, 0.2);
+}
+
+.skills span:hover {
+  background: #f5c518;
+  color: #0a2540;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0a2540;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+/* --- END HOVER EFFECTS --- */
+
+
+/* --- MOBILE ALIGNMENT FIX (ANDROID VIEW) --- */
+@media screen and (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 90%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .gallery-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-row img,
+  .gallery-row video {
+    width: 90%;
+    max-height: 220px;
+  }
+
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image-left img {
+    width: 70%;
+    margin-bottom: 1.2rem;
+  }
+}
+/* --- END MOBILE FIX --- */
 .project-card h3 {
   color: #0a2540;
   margin-bottom: 0.5rem;
